@@ -164,6 +164,9 @@ def process_gotochi() -> dict:
 
     records = df.copy()
     records["issue_date"] = records["issue_date"].dt.strftime("%Y-%m-%d")
+    # Replace pandas NaN with None so json.dump emits `null`, not the bare
+    # `NaN` token — which is not valid JSON and breaks browser JSON.parse.
+    records = records.astype(object).where(pd.notna(records), None)
     records_list = records.to_dict(orient="records")
 
     result = {
@@ -213,7 +216,9 @@ def build_summary(chimei, hiragana, gotochi) -> dict:
 
 def save(path: Path, obj) -> None:
     with open(path, "w", encoding="utf-8") as f:
-        json.dump(obj, f, ensure_ascii=False, indent=2)
+        # allow_nan=False makes json.dump raise on NaN/Infinity instead of
+        # silently writing non-standard tokens that break strict parsers.
+        json.dump(obj, f, ensure_ascii=False, indent=2, allow_nan=False)
     print(f"  Saved → {path.name}")
 
 

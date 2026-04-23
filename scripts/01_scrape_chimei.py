@@ -74,18 +74,47 @@ def extract_chimei(html: str) -> pd.DataFrame:
 
 
 def clean(df: pd.DataFrame) -> pd.DataFrame:
-    # Rename columns to standard names where possible
+    # The 一覧 table has multiple columns that partially match simple keyword
+    # heuristics (e.g. 地名表示, 地名表示の番号, 所在地名 all contain "地名").
+    # Pick the most specific column for each target and keep only the first
+    # match so we never produce duplicate column names after rename.
     rename_map = {}
+    used_targets: set[str] = set()
+
+    def assign(col, target):
+        if target not in used_targets:
+            rename_map[col] = target
+            used_targets.add(target)
+
     for col in df.columns:
-        c = str(col)
-        if "地名" in c:
-            rename_map[col] = "chimei"
-        elif "運輸支局" in c or "検査登録" in c or "事務所" in c:
-            rename_map[col] = "office"
-        elif "都道府県" in c or "県" in c or "府" in c:
-            rename_map[col] = "prefecture"
-        elif "備考" in c or "備注" in c or "note" in c.lower():
-            rename_map[col] = "notes"
+        c = str(col).strip()
+        # chimei: prefer 地名表示 (display label) over 地名表示の番号 / 所在地名.
+        if "地名表示" in c and "番号" not in c:
+            assign(col, "chimei")
+        elif c == "地名":
+            assign(col, "chimei")
+        elif c == "都道府県名" or c == "都道府県":
+            assign(col, "prefecture")
+        elif "備考" in c or "備注" in c or c.lower() == "note" or c.lower() == "notes":
+            assign(col, "notes")
+
+    # Office column is special: the Wikipedia 一覧 table has three columns
+    # under the merged "陸事分野の運輸支局 自動車検査登録事務所名" header.
+    # pandas disambiguates them as name, name.1, name.2. The FIRST column is
+    # the regional 運輸局 (same for every row in a prefecture — useless as a
+    # distinguishing field). The SECOND column is the actual 運輸支局 /
+    # 自動車検査登録事務所 that issues the plate. Prefer that one.
+    office_cols = [
+        c for c in df.columns
+        if "運輸支局" in str(c) or "検査登録事務所" in str(c)
+    ]
+    if len(office_cols) >= 2:
+        rename_map[office_cols[1]] = "office"
+        used_targets.add("office")
+    elif office_cols:
+        rename_map[office_cols[0]] = "office"
+        used_targets.add("office")
+
     df = df.rename(columns=rename_map)
 
     # Drop rows where chimei is NaN or repeats the header text
