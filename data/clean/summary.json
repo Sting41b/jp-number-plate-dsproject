@@ -1,0 +1,24 @@
+{
+  "total_chimei": 0,
+  "total_gotochi": 119,
+  "hiragana_used": 40,
+  "hiragana_excluded": 6,
+  "bunrui_ranges": 9,
+  "data_sources": [
+    {
+      "name": "Wikipedia — 日本のナンバープレート一覧",
+      "url": "https://ja.wikipedia.org/wiki/日本のナンバープレート一覧",
+      "dataset": "chimei"
+    },
+    {
+      "name": "大阪自家用自動車協会 — 分類番号解説",
+      "url": "https://daijiren.or.jp/number/",
+      "dataset": "bunrui_bangou"
+    },
+    {
+      "name": "国土交通省 — ご当地ナンバープレス",
+      "url": "https://www.mlit.go.jp/",
+      "dataset": "gotochi"
+    }
+  ]
+}
