@@ -1,0 +1,933 @@
+[
+  {
+    "chimei": "札幌",
+    "office": "札幌運輸支局",
+    "prefecture": "北海道",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "函館",
+    "office": "函館運輸支局",
+    "prefecture": "北海道",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "旭川",
+    "office": "旭川運輸支局",
+    "prefecture": "北海道",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "室蘭",
+    "office": "室蘭運輸支局",
+    "prefecture": "北海道",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "苫小牧*",
+    "office": "室蘭運輸支局",
+    "prefecture": "北海道",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "釧路",
+    "office": "釧路運輸支局",
+    "prefecture": "北海道",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "知床*",
+    "office": "釧路運輸支局",
+    "prefecture": "北海道",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "帯広",
+    "office": "帯広運輸支局",
+    "prefecture": "北海道",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "北見",
+    "office": "北見運輸支局",
+    "prefecture": "北海道",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "青森",
+    "office": "青森運輸支局",
+    "prefecture": "青森県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "弘前*",
+    "office": "青森運輸支局",
+    "prefecture": "青森県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "八戸",
+    "office": "青森運輸支局",
+    "prefecture": "青森県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "岩手",
+    "office": "岩手運輸支局",
+    "prefecture": "岩手県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "盛岡*",
+    "office": "岩手運輸支局",
+    "prefecture": "岩手県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "平泉*",
+    "office": "岩手運輸支局",
+    "prefecture": "岩手県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "宮城",
+    "office": "宮城運輸支局",
+    "prefecture": "宮城県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "仙台*",
+    "office": "宮城運輸支局",
+    "prefecture": "宮城県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "秋田",
+    "office": "秋田運輸支局",
+    "prefecture": "秋田県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "山形",
+    "office": "山形運輸支局",
+    "prefecture": "山形県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "庄内",
+    "office": "山形運輸支局",
+    "prefecture": "山形県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "福島",
+    "office": "福島運輸支局",
+    "prefecture": "福島県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "会津*",
+    "office": "福島運輸支局",
+    "prefecture": "福島県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "郡山*",
+    "office": "福島運輸支局",
+    "prefecture": "福島県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "白河*",
+    "office": "福島運輸支局",
+    "prefecture": "福島県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "いわき[注 1]",
+    "office": "福島運輸支局",
+    "prefecture": "福島県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "水戸",
+    "office": "茨城運輸支局",
+    "prefecture": "茨城県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "土浦",
+    "office": "茨城運輸支局",
+    "prefecture": "茨城県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "つくば*",
+    "office": "茨城運輸支局",
+    "prefecture": "茨城県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "宇都宮",
+    "office": "栃木運輸支局",
+    "prefecture": "栃木県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "那須*",
+    "office": "栃木運輸支局",
+    "prefecture": "栃木県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "とちぎ",
+    "office": "栃木運輸支局",
+    "prefecture": "栃木県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "群馬",
+    "office": "群馬運輸支局",
+    "prefecture": "群馬県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "前橋*",
+    "office": "群馬運輸支局",
+    "prefecture": "群馬県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "高崎*",
+    "office": "群馬運輸支局",
+    "prefecture": "群馬県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "大宮",
+    "office": "埼玉運輸支局",
+    "prefecture": "埼玉県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "川口*",
+    "office": "埼玉運輸支局",
+    "prefecture": "埼玉県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "所沢",
+    "office": "埼玉運輸支局",
+    "prefecture": "埼玉県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "川越*",
+    "office": "埼玉運輸支局",
+    "prefecture": "埼玉県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "熊谷",
+    "office": "埼玉運輸支局",
+    "prefecture": "埼玉県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "春日部",
+    "office": "埼玉運輸支局",
+    "prefecture": "埼玉県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "越谷*",
+    "office": "埼玉運輸支局",
+    "prefecture": "埼玉県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "千葉",
+    "office": "千葉運輸支局",
+    "prefecture": "千葉県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "成田*",
+    "office": "千葉運輸支局",
+    "prefecture": "千葉県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "習志野",
+    "office": "千葉運輸支局",
+    "prefecture": "千葉県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "市川*",
+    "office": "千葉運輸支局",
+    "prefecture": "千葉県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "船橋*",
+    "office": "千葉運輸支局",
+    "prefecture": "千葉県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "袖ヶ浦",
+    "office": "千葉運輸支局",
+    "prefecture": "千葉県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "市原*",
+    "office": "千葉運輸支局",
+    "prefecture": "千葉県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "野田",
+    "office": "千葉運輸支局",
+    "prefecture": "千葉県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "柏* [注 2]",
+    "office": "千葉運輸支局",
+    "prefecture": "千葉県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "松戸*",
+    "office": "千葉運輸支局",
+    "prefecture": "千葉県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "品川",
+    "office": "東京運輸支局",
+    "prefecture": "東京都",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "世田谷*",
+    "office": "東京運輸支局",
+    "prefecture": "東京都",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "練馬",
+    "office": "東京運輸支局",
+    "prefecture": "東京都",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "杉並*",
+    "office": "東京運輸支局",
+    "prefecture": "東京都",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "板橋*",
+    "office": "東京運輸支局",
+    "prefecture": "東京都",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "足立",
+    "office": "東京運輸支局",
+    "prefecture": "東京都",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "江東*",
+    "office": "東京運輸支局",
+    "prefecture": "東京都",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "葛飾*",
+    "office": "東京運輸支局",
+    "prefecture": "東京都",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "八王子",
+    "office": "東京運輸支局",
+    "prefecture": "東京都",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "多摩",
+    "office": "東京運輸支局",
+    "prefecture": "東京都",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "横浜",
+    "office": "神奈川運輸支局",
+    "prefecture": "神奈川県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "川崎",
+    "office": "神奈川運輸支局",
+    "prefecture": "神奈川県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "湘南",
+    "office": "神奈川運輸支局",
+    "prefecture": "神奈川県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "相模",
+    "office": "神奈川運輸支局",
+    "prefecture": "神奈川県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "山梨",
+    "office": "山梨運輸支局",
+    "prefecture": "山梨県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "富士山*",
+    "office": "山梨運輸支局",
+    "prefecture": "山梨県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "新潟",
+    "office": "新潟運輸支局",
+    "prefecture": "新潟県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "長岡",
+    "office": "新潟運輸支局",
+    "prefecture": "新潟県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "上越*",
+    "office": "新潟運輸支局",
+    "prefecture": "新潟県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "長野",
+    "office": "長野運輸支局",
+    "prefecture": "長野県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "松本",
+    "office": "長野運輸支局",
+    "prefecture": "長野県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "諏訪*",
+    "office": "長野運輸支局",
+    "prefecture": "長野県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "富山",
+    "office": "富山運輸支局",
+    "prefecture": "富山県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "石川",
+    "office": "石川運輸支局",
+    "prefecture": "石川県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "金沢*",
+    "office": "石川運輸支局",
+    "prefecture": "石川県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "福井",
+    "office": "福井運輸支局",
+    "prefecture": "福井県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "岐阜",
+    "office": "岐阜運輸支局",
+    "prefecture": "岐阜県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "飛騨",
+    "office": "岐阜運輸支局",
+    "prefecture": "岐阜県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "静岡",
+    "office": "静岡運輸支局",
+    "prefecture": "静岡県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "浜松",
+    "office": "静岡運輸支局",
+    "prefecture": "静岡県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "沼津",
+    "office": "静岡運輸支局",
+    "prefecture": "静岡県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "伊豆*",
+    "office": "静岡運輸支局",
+    "prefecture": "静岡県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "名古屋",
+    "office": "愛知運輸支局",
+    "prefecture": "愛知県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "豊橋",
+    "office": "愛知運輸支局",
+    "prefecture": "愛知県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "三河",
+    "office": "愛知運輸支局",
+    "prefecture": "愛知県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "岡崎*",
+    "office": "愛知運輸支局",
+    "prefecture": "愛知県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "豊田*",
+    "office": "愛知運輸支局",
+    "prefecture": "愛知県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "尾張小牧[注 3]",
+    "office": "愛知運輸支局",
+    "prefecture": "愛知県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "一宮*",
+    "office": "愛知運輸支局",
+    "prefecture": "愛知県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "春日井*",
+    "office": "愛知運輸支局",
+    "prefecture": "愛知県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "三重",
+    "office": "三重運輸支局",
+    "prefecture": "三重県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "鈴鹿*",
+    "office": "三重運輸支局",
+    "prefecture": "三重県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "四日市*",
+    "office": "三重運輸支局",
+    "prefecture": "三重県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "伊勢志摩*",
+    "office": "三重運輸支局",
+    "prefecture": "三重県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "滋賀",
+    "office": "滋賀運輸支局",
+    "prefecture": "滋賀県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "京都",
+    "office": "京都運輸支局",
+    "prefecture": "京都府",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "なにわ",
+    "office": "大阪運輸支局",
+    "prefecture": "大阪府",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "大阪",
+    "office": "大阪運輸支局",
+    "prefecture": "大阪府",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "和泉",
+    "office": "大阪運輸支局",
+    "prefecture": "大阪府",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "堺*",
+    "office": "大阪運輸支局",
+    "prefecture": "大阪府",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "奈良",
+    "office": "奈良運輸支局",
+    "prefecture": "奈良県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "飛鳥*",
+    "office": "奈良運輸支局",
+    "prefecture": "奈良県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "和歌山",
+    "office": "和歌山運輸支局",
+    "prefecture": "和歌山県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "神戸",
+    "office": "神戸運輸監理部",
+    "prefecture": "兵庫県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "姫路",
+    "office": "神戸運輸監理部",
+    "prefecture": "兵庫県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "鳥取",
+    "office": "鳥取運輸支局",
+    "prefecture": "鳥取県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "島根",
+    "office": "島根運輸支局",
+    "prefecture": "島根県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "出雲*",
+    "office": "島根運輸支局",
+    "prefecture": "島根県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "岡山",
+    "office": "岡山運輸支局",
+    "prefecture": "岡山県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "倉敷*",
+    "office": "岡山運輸支局",
+    "prefecture": "岡山県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "広島",
+    "office": "広島運輸支局",
+    "prefecture": "広島県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "福山",
+    "office": "広島運輸支局",
+    "prefecture": "広島県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "山口",
+    "office": "山口運輸支局",
+    "prefecture": "山口県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "下関*",
+    "office": "山口運輸支局",
+    "prefecture": "山口県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "徳島",
+    "office": "徳島運輸支局",
+    "prefecture": "徳島県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "香川",
+    "office": "香川運輸支局",
+    "prefecture": "香川県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "高松*",
+    "office": "香川運輸支局",
+    "prefecture": "香川県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "愛媛",
+    "office": "愛媛運輸支局",
+    "prefecture": "愛媛県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "高知",
+    "office": "高知運輸支局",
+    "prefecture": "高知県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "福岡",
+    "office": "福岡運輸支局",
+    "prefecture": "福岡県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "北九州",
+    "office": "福岡運輸支局",
+    "prefecture": "福岡県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "久留米",
+    "office": "福岡運輸支局",
+    "prefecture": "福岡県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "筑豊",
+    "office": "福岡運輸支局",
+    "prefecture": "福岡県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "佐賀",
+    "office": "佐賀運輸支局",
+    "prefecture": "佐賀県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "長崎",
+    "office": "長崎運輸支局",
+    "prefecture": "長崎県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "佐世保",
+    "office": "長崎運輸支局",
+    "prefecture": "長崎県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "熊本",
+    "office": "熊本運輸支局",
+    "prefecture": "熊本県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "大分",
+    "office": "大分運輸支局",
+    "prefecture": "大分県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "宮崎",
+    "office": "宮崎運輸支局",
+    "prefecture": "宮崎県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "鹿児島",
+    "office": "鹿児島運輸支局",
+    "prefecture": "鹿児島県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "奄美*",
+    "office": "鹿児島運輸支局",
+    "prefecture": "鹿児島県",
+    "notes": null,
+    "is_gotochi": false
+  },
+  {
+    "chimei": "沖縄",
+    "office": "沖縄総合事務局運輸部",
+    "prefecture": "沖縄県",
+    "notes": null,
+    "is_gotochi": false
+  }
+]

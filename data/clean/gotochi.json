@@ -8,7 +8,7 @@
       "wave": 1,
       "issue_date": "2006-10-10",
       "base_chimei": "福島",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 1
     },
     {
@@ -19,7 +19,7 @@
       "wave": 1,
       "issue_date": "2006-10-10",
       "base_chimei": "山口",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 2
     },
     {
@@ -30,7 +30,7 @@
       "wave": 1,
       "issue_date": "2006-10-10",
       "base_chimei": "宮城",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 3
     },
     {
@@ -41,7 +41,7 @@
       "wave": 1,
       "issue_date": "2006-10-10",
       "base_chimei": "福島",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 4
     },
     {
@@ -52,7 +52,7 @@
       "wave": 1,
       "issue_date": "2006-10-10",
       "base_chimei": "岡山",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 5
     },
     {
@@ -63,7 +63,7 @@
       "wave": 1,
       "issue_date": "2006-10-10",
       "base_chimei": "前橋",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 6
     },
     {
@@ -74,7 +74,7 @@
       "wave": 1,
       "issue_date": "2006-10-10",
       "base_chimei": "大分",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 7
     },
     {
@@ -96,7 +96,7 @@
       "wave": 1,
       "issue_date": "2006-10-10",
       "base_chimei": "宮崎",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 9
     },
     {
@@ -118,7 +118,7 @@
       "wave": 1,
       "issue_date": "2006-10-10",
       "base_chimei": "岡山",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 11
     },
     {
@@ -129,7 +129,7 @@
       "wave": 1,
       "issue_date": "2006-10-10",
       "base_chimei": "横浜",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 12
     },
     {
@@ -140,7 +140,7 @@
       "wave": 1,
       "issue_date": "2006-10-10",
       "base_chimei": "大宮",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 13
     },
     {
@@ -173,7 +173,7 @@
       "wave": 1,
       "issue_date": "2006-10-10",
       "base_chimei": "千葉",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 16
     },
     {
@@ -184,7 +184,7 @@
       "wave": 1,
       "issue_date": "2006-10-10",
       "base_chimei": "大宮",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 17
     },
     {
@@ -195,7 +195,7 @@
       "wave": 1,
       "issue_date": "2006-10-10",
       "base_chimei": "千葉",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 18
     },
     {
@@ -206,7 +206,7 @@
       "wave": 1,
       "issue_date": "2006-10-10",
       "base_chimei": "沖縄",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 19
     },
     {
@@ -217,7 +217,7 @@
       "wave": 1,
       "issue_date": "2006-10-10",
       "base_chimei": "横浜",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 20
     },
     {
@@ -228,7 +228,7 @@
       "wave": 1,
       "issue_date": "2006-10-10",
       "base_chimei": "熊本",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 21
     },
     {
@@ -239,7 +239,7 @@
       "wave": 1,
       "issue_date": "2006-10-10",
       "base_chimei": "横浜",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 22
     },
     {
@@ -250,7 +250,7 @@
       "wave": 1,
       "issue_date": "2006-10-10",
       "base_chimei": "広島",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 23
     },
     {
@@ -261,7 +261,7 @@
       "wave": 1,
       "issue_date": "2006-10-10",
       "base_chimei": "宇都宮",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 24
     },
     {
@@ -272,7 +272,7 @@
       "wave": 1,
       "issue_date": "2006-10-10",
       "base_chimei": "金沢",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 25
     },
     {
@@ -283,7 +283,7 @@
       "wave": 1,
       "issue_date": "2006-10-10",
       "base_chimei": "長崎",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 26
     },
     {
@@ -294,7 +294,7 @@
       "wave": 1,
       "issue_date": "2006-10-10",
       "base_chimei": "前橋",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 27
     },
     {
@@ -305,7 +305,7 @@
       "wave": 1,
       "issue_date": "2006-10-10",
       "base_chimei": "高知",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 28
     },
     {
@@ -316,7 +316,7 @@
       "wave": 1,
       "issue_date": "2006-10-10",
       "base_chimei": "鹿児島",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 29
     },
     {
@@ -327,7 +327,7 @@
       "wave": 2,
       "issue_date": "2014-11-17",
       "base_chimei": "水戸",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 30
     },
     {
@@ -338,7 +338,7 @@
       "wave": 2,
       "issue_date": "2014-11-17",
       "base_chimei": "名古屋",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 31
     },
     {
@@ -349,7 +349,7 @@
       "wave": 2,
       "issue_date": "2014-11-17",
       "base_chimei": "多摩",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 32
     },
     {
@@ -371,7 +371,7 @@
       "wave": 2,
       "issue_date": "2014-11-17",
       "base_chimei": "福岡",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 34
     },
     {
@@ -382,7 +382,7 @@
       "wave": 2,
       "issue_date": "2014-11-17",
       "base_chimei": "沼津",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 35
     },
     {
@@ -404,7 +404,7 @@
       "wave": 2,
       "issue_date": "2014-11-17",
       "base_chimei": "佐賀",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 37
     },
     {
@@ -415,7 +415,7 @@
       "wave": 2,
       "issue_date": "2014-11-17",
       "base_chimei": "八王子",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 38
     },
     {
@@ -426,7 +426,7 @@
       "wave": 2,
       "issue_date": "2014-11-17",
       "base_chimei": "北九州",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 39
     },
     {
@@ -437,7 +437,7 @@
       "wave": 2,
       "issue_date": "2014-11-17",
       "base_chimei": "和泉",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 40
     },
     {
@@ -448,7 +448,7 @@
       "wave": 2,
       "issue_date": "2014-11-17",
       "base_chimei": "水戸",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 41
     },
     {
@@ -459,7 +459,7 @@
       "wave": 2,
       "issue_date": "2014-11-17",
       "base_chimei": "なにわ",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 42
     },
     {
@@ -470,7 +470,7 @@
       "wave": 2,
       "issue_date": "2014-11-17",
       "base_chimei": "奈良",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 43
     },
     {
@@ -481,7 +481,7 @@
       "wave": 2,
       "issue_date": "2014-11-17",
       "base_chimei": "神戸",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 44
     },
     {
@@ -492,7 +492,7 @@
       "wave": 2,
       "issue_date": "2014-11-17",
       "base_chimei": "宇都宮",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 45
     },
     {
@@ -503,7 +503,7 @@
       "wave": 2,
       "issue_date": "2014-11-17",
       "base_chimei": "富山",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 46
     },
     {
@@ -514,7 +514,7 @@
       "wave": 2,
       "issue_date": "2014-11-17",
       "base_chimei": "横浜",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 47
     },
     {
@@ -525,7 +525,7 @@
       "wave": 2,
       "issue_date": "2014-11-17",
       "base_chimei": "山口",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 48
     },
     {
@@ -536,7 +536,7 @@
       "wave": 2,
       "issue_date": "2014-11-17",
       "base_chimei": "山形",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 49
     },
     {
@@ -547,7 +547,7 @@
       "wave": 2,
       "issue_date": "2014-11-17",
       "base_chimei": "豊橋",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 50
     },
     {
@@ -558,7 +558,7 @@
       "wave": 2,
       "issue_date": "2014-11-17",
       "base_chimei": "多摩",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 51
     },
     {
@@ -569,7 +569,7 @@
       "wave": 2,
       "issue_date": "2014-11-17",
       "base_chimei": "徳島",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 52
     },
     {
@@ -580,7 +580,7 @@
       "wave": 2,
       "issue_date": "2014-11-17",
       "base_chimei": "大宮",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 53
     },
     {
@@ -591,7 +591,7 @@
       "wave": 2,
       "issue_date": "2014-11-17",
       "base_chimei": "新潟",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 54
     },
     {
@@ -602,7 +602,7 @@
       "wave": 2,
       "issue_date": "2014-11-17",
       "base_chimei": "名古屋",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 55
     },
     {
@@ -613,7 +613,7 @@
       "wave": 2,
       "issue_date": "2014-11-17",
       "base_chimei": "千葉",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 56
     },
     {
@@ -624,7 +624,7 @@
       "wave": 2,
       "issue_date": "2014-11-17",
       "base_chimei": "品川",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 57
     },
     {
@@ -635,7 +635,7 @@
       "wave": 2,
       "issue_date": "2014-11-17",
       "base_chimei": "松山",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 58
     },
     {
@@ -646,7 +646,7 @@
       "wave": 2,
       "issue_date": "2014-11-17",
       "base_chimei": "千葉",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 59
     },
     {
@@ -657,7 +657,7 @@
       "wave": 2,
       "issue_date": "2014-11-17",
       "base_chimei": "松本",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 60
     },
     {
@@ -668,7 +668,7 @@
       "wave": 2,
       "issue_date": "2014-11-17",
       "base_chimei": "水戸",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 61
     },
     {
@@ -679,7 +679,7 @@
       "wave": 2,
       "issue_date": "2014-11-17",
       "base_chimei": "江東",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 62
     },
     {
@@ -690,7 +690,7 @@
       "wave": 2,
       "issue_date": "2014-11-17",
       "base_chimei": "八王子",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 63
     },
     {
@@ -701,7 +701,7 @@
       "wave": 2,
       "issue_date": "2014-11-17",
       "base_chimei": "岩手",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 64
     },
     {
@@ -712,7 +712,7 @@
       "wave": 2,
       "issue_date": "2014-11-17",
       "base_chimei": "福井",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 65
     },
     {
@@ -723,7 +723,7 @@
       "wave": 2,
       "issue_date": "2014-11-17",
       "base_chimei": "福岡",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 66
     },
     {
@@ -734,7 +734,7 @@
       "wave": 2,
       "issue_date": "2014-11-17",
       "base_chimei": "秋田",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 67
     },
     {
@@ -745,7 +745,7 @@
       "wave": 2,
       "issue_date": "2014-11-17",
       "base_chimei": "足立",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 68
     },
     {
@@ -756,7 +756,7 @@
       "wave": 2,
       "issue_date": "2014-11-17",
       "base_chimei": "千葉",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 69
     },
     {
@@ -767,7 +767,7 @@
       "wave": 2,
       "issue_date": "2014-11-17",
       "base_chimei": "足立",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 70
     },
     {
@@ -778,7 +778,7 @@
       "wave": 2,
       "issue_date": "2014-11-17",
       "base_chimei": "多摩",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 71
     },
     {
@@ -789,7 +789,7 @@
       "wave": 2,
       "issue_date": "2014-11-17",
       "base_chimei": "松本",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 72
     },
     {
@@ -800,7 +800,7 @@
       "wave": 2,
       "issue_date": "2014-11-17",
       "base_chimei": "豊橋",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 73
     },
     {
@@ -811,7 +811,7 @@
       "wave": 2,
       "issue_date": "2014-11-17",
       "base_chimei": "名古屋",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 74
     },
     {
@@ -822,7 +822,7 @@
       "wave": 2,
       "issue_date": "2014-11-17",
       "base_chimei": "大宮",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 75
     },
     {
@@ -833,7 +833,7 @@
       "wave": 2,
       "issue_date": "2014-11-17",
       "base_chimei": "沖縄",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 76
     },
     {
@@ -844,7 +844,7 @@
       "wave": 2,
       "issue_date": "2014-11-17",
       "base_chimei": "福島",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 77
     },
     {
@@ -855,7 +855,7 @@
       "wave": 2,
       "issue_date": "2014-11-17",
       "base_chimei": "三重",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 78
     },
     {
@@ -866,7 +866,7 @@
       "wave": 2,
       "issue_date": "2014-11-17",
       "base_chimei": "長野",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 79
     },
     {
@@ -877,7 +877,7 @@
       "wave": 2,
       "issue_date": "2014-11-17",
       "base_chimei": "青森",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 80
     },
     {
@@ -888,7 +888,7 @@
       "wave": 2,
       "issue_date": "2014-11-17",
       "base_chimei": "岐阜",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 81
     },
     {
@@ -899,7 +899,7 @@
       "wave": 2,
       "issue_date": "2014-11-17",
       "base_chimei": "高松",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 82
     },
     {
@@ -910,7 +910,7 @@
       "wave": 3,
       "issue_date": "2019-05-13",
       "base_chimei": "豊橋",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 83
     },
     {
@@ -921,7 +921,7 @@
       "wave": 3,
       "issue_date": "2019-05-13",
       "base_chimei": "京都",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 84
     },
     {
@@ -932,7 +932,7 @@
       "wave": 3,
       "issue_date": "2019-05-13",
       "base_chimei": "青森",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 85
     },
     {
@@ -943,7 +943,7 @@
       "wave": 3,
       "issue_date": "2019-05-13",
       "base_chimei": "函館",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 86
     },
     {
@@ -954,7 +954,7 @@
       "wave": 3,
       "issue_date": "2019-05-13",
       "base_chimei": "北見",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 87
     },
     {
@@ -965,7 +965,7 @@
       "wave": 3,
       "issue_date": "2019-05-13",
       "base_chimei": "千葉",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 88
     },
     {
@@ -976,7 +976,7 @@
       "wave": 3,
       "issue_date": "2019-05-13",
       "base_chimei": "水戸",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 89
     },
     {
@@ -987,7 +987,7 @@
       "wave": 3,
       "issue_date": "2019-05-13",
       "base_chimei": "水戸",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 90
     },
     {
@@ -998,7 +998,7 @@
       "wave": 3,
       "issue_date": "2019-05-13",
       "base_chimei": "和歌山",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 91
     },
     {
@@ -1009,7 +1009,7 @@
       "wave": 3,
       "issue_date": "2019-05-13",
       "base_chimei": "多摩",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 92
     },
     {
@@ -1020,7 +1020,7 @@
       "wave": 3,
       "issue_date": "2019-05-13",
       "base_chimei": "室蘭",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 93
     },
     {
@@ -1031,7 +1031,7 @@
       "wave": 3,
       "issue_date": "2019-05-13",
       "base_chimei": "富山",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 94
     },
     {
@@ -1042,7 +1042,7 @@
       "wave": 3,
       "issue_date": "2019-05-13",
       "base_chimei": "名古屋",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 95
     },
     {
@@ -1053,7 +1053,7 @@
       "wave": 3,
       "issue_date": "2019-05-13",
       "base_chimei": "岐阜",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 96
     },
     {
@@ -1064,7 +1064,7 @@
       "wave": 3,
       "issue_date": "2019-05-13",
       "base_chimei": "島根",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 97
     },
     {
@@ -1075,7 +1075,7 @@
       "wave": 3,
       "issue_date": "2019-05-13",
       "base_chimei": "大宮",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 98
     },
     {
@@ -1086,7 +1086,7 @@
       "wave": 3,
       "issue_date": "2019-05-13",
       "base_chimei": "横浜",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 99
     },
     {
@@ -1097,7 +1097,7 @@
       "wave": 3,
       "issue_date": "2019-05-13",
       "base_chimei": "帯広",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 100
     },
     {
@@ -1108,7 +1108,7 @@
       "wave": 3,
       "issue_date": "2019-05-13",
       "base_chimei": "広島",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 101
     },
     {
@@ -1119,7 +1119,7 @@
       "wave": 3,
       "issue_date": "2019-05-13",
       "base_chimei": "青森",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 102
     },
     {
@@ -1130,7 +1130,7 @@
       "wave": 3,
       "issue_date": "2019-05-13",
       "base_chimei": "松山",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 103
     },
     {
@@ -1141,7 +1141,7 @@
       "wave": 3,
       "issue_date": "2019-05-13",
       "base_chimei": "旭川",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 104
     },
     {
@@ -1152,7 +1152,7 @@
       "wave": 3,
       "issue_date": "2019-05-13",
       "base_chimei": "足立",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 105
     },
     {
@@ -1163,7 +1163,7 @@
       "wave": 3,
       "issue_date": "2019-05-13",
       "base_chimei": "横浜",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 106
     },
     {
@@ -1174,7 +1174,7 @@
       "wave": 3,
       "issue_date": "2019-05-13",
       "base_chimei": "足立",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 107
     },
     {
@@ -1185,7 +1185,7 @@
       "wave": 3,
       "issue_date": "2019-05-13",
       "base_chimei": "浜松",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 108
     },
     {
@@ -1196,7 +1196,7 @@
       "wave": 3,
       "issue_date": "2019-05-13",
       "base_chimei": "熊谷",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 109
     },
     {
@@ -1207,7 +1207,7 @@
       "wave": 3,
       "issue_date": "2019-05-13",
       "base_chimei": "宮城",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 110
     },
     {
@@ -1218,7 +1218,7 @@
       "wave": 3,
       "issue_date": "2019-05-13",
       "base_chimei": "神戸",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 111
     },
     {
@@ -1229,7 +1229,7 @@
       "wave": 3,
       "issue_date": "2019-05-13",
       "base_chimei": "千葉",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 112
     },
     {
@@ -1240,7 +1240,7 @@
       "wave": 3,
       "issue_date": "2019-05-13",
       "base_chimei": "室蘭",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 113
     },
     {
@@ -1251,7 +1251,7 @@
       "wave": 3,
       "issue_date": "2019-05-13",
       "base_chimei": "足立",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 114
     },
     {
@@ -1262,7 +1262,7 @@
       "wave": 3,
       "issue_date": "2019-05-13",
       "base_chimei": "千葉",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 115
     },
     {
@@ -1273,7 +1273,7 @@
       "wave": 3,
       "issue_date": "2019-05-13",
       "base_chimei": "釧路",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 116
     },
     {
@@ -1284,7 +1284,7 @@
       "wave": 3,
       "issue_date": "2019-05-13",
       "base_chimei": "静岡",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 117
     },
     {
@@ -1295,7 +1295,7 @@
       "wave": 3,
       "issue_date": "2019-05-13",
       "base_chimei": "高松",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 118
     },
     {
@@ -1306,7 +1306,7 @@
       "wave": 3,
       "issue_date": "2019-05-13",
       "base_chimei": "鳥取",
-      "notes": NaN,
+      "notes": null,
       "cumulative": 119
     }
   ],
