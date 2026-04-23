@@ -19,6 +19,15 @@ from pathlib import Path
 import pandas as pd
 import requests
 
+# Windows console defaults to cp1252, which can't encode the Japanese URL /
+# table headers we print. Force UTF-8 on stdout/stderr so the script runs on
+# a plain `python scripts/01_scrape_chimei.py` invocation without needing
+# PYTHONUTF8=1 set in the environment. No-op on POSIX where stdout is already
+# UTF-8.
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+
 URL = "https://ja.wikipedia.org/wiki/日本のナンバープレート一覧"
 OUT = Path(__file__).parent.parent / "data" / "raw" / "chimei_raw.csv"
 
@@ -121,6 +130,17 @@ def clean(df: pd.DataFrame) -> pd.DataFrame:
     if "chimei" in df.columns:
         df = df[df["chimei"].notna()]
         df = df[df["chimei"] != "地名"]
+        # Wikipedia footnote markers show up in three shapes in this column:
+        #   - trailing "*":           苫小牧*, 知床*
+        #   - "*" + bracketed ref:    柏* [注 2]
+        #   - plain bracketed ref:    いわき[注 1], 尾張小牧[注 3]
+        # Strip them all so chimei is just the display string.
+        df["chimei"] = (
+            df["chimei"].astype(str)
+            .str.replace(r"\s*\*.*$", "", regex=True)        # * and everything after
+            .str.replace(r"\s*\[[^\]]*\]", "", regex=True)   # [注 N] and similar
+            .str.strip()
+        )
 
     # Strip whitespace from all string columns
     str_cols = df.select_dtypes(include="object").columns

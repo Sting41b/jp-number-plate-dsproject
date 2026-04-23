@@ -41,11 +41,41 @@ python -c "import json; ..."              # strict-parse every data/clean/*.json
 
 ### Known limitations (not blockers)
 
-- Windows console encoding: the scraper script prints Japanese URLs/headers.
-  It must be run with `PYTHONUTF8=1` (or equivalent) on Windows until a
-  `sys.stdout.reconfigure(encoding='utf-8')` is added. Not fixed this session.
-- A handful of `chimei` values carry a trailing `*` (footnote marker from
-  Wikipedia) — e.g. `苫小牧*`, `知床*`. Left as-is; dashboard can strip.
 - `process_chimei()` deduplicates by `chimei` name, so 5 rows were collapsed
   (of 138 scraped → 133 written). Those were genuine duplicates across 運輸支局
   rows, so the behaviour is acceptable for the current data model.
+  → **Resolved in follow-up session below.**
+
+---
+
+## 2026-04-23 — Follow-up: known-limitations cleanup
+
+### What was verified
+Applied the three known limitations from the previous session. Re-ran the
+full pipeline on a plain `python` invocation (no `PYTHONUTF8=1`) and
+re-verified every clean JSON.
+
+### Fixes applied
+
+1. **`scripts/01_scrape_chimei.py`** — added `sys.stdout.reconfigure(encoding='utf-8')`
+   so the script runs on plain Windows `python` without needing `PYTHONUTF8=1`.
+2. **`scripts/02_clean_and_merge.py`** — same UTF-8 stdout reconfigure.
+3. **`scripts/01_scrape_chimei.py`** — `clean()` now strips Wikipedia footnote
+   markers from chimei values. Covers three shapes: trailing `*` (苫小牧*,
+   知床*), `*` + bracketed ref (柏* [注 2]), and plain bracketed ref
+   (いわき[注 1], 尾張小牧[注 3]).
+4. **`scripts/02_clean_and_merge.py`** — `process_chimei()` no longer dedups
+   by `chimei` alone. Dashboards should treat `(chimei, office)` as the
+   compound key.
+
+### Results
+
+| Check | Result |
+|---|---|
+| `python scripts/01_scrape_chimei.py` runs without `PYTHONUTF8=1` | PASS |
+| `python scripts/02_clean_and_merge.py` runs without `PYTHONUTF8=1` | PASS |
+| `data/clean/chimei.json` strict-parses | PASS — 138 records (up from 133) |
+| No chimei value contains `*`, `[`, or `]` | PASS — 0 matches |
+| Multi-office chimei entries preserved | PASS — 知床×2 (釧路, 北見), 富士山×2 (山梨, 静岡), 長崎×2, 沖縄×3 |
+| All other `data/clean/*.json` still strict-parse | PASS |
+| `summary.total_chimei` reflects new count | PASS — 138 |

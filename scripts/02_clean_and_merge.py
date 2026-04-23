@@ -21,9 +21,19 @@ Run:
 """
 
 import json
+import sys
 from pathlib import Path
 
 import pandas as pd
+
+# Windows console defaults to cp1252, which can't encode the Japanese section
+# headers we print (=== 地名 ===, etc.). Force UTF-8 on stdout/stderr so the
+# script runs on a plain `python scripts/02_clean_and_merge.py` invocation
+# without needing PYTHONUTF8=1 set in the environment. No-op on POSIX where
+# stdout is already UTF-8.
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
 
 RAW = Path(__file__).parent.parent / "data" / "raw"
 CLEAN = Path(__file__).parent.parent / "data" / "clean"
@@ -53,8 +63,10 @@ def process_chimei() -> list[dict]:
                 print(f"  Auto-renamed '{col}' → 'chimei'")
                 break
 
-    # Deduplicate
-    df = df.drop_duplicates(subset="chimei")
+    # No dedup on chimei alone: some names (e.g. 知床) are legitimately
+    # assigned to more than one 運輸支局 (釧路 and 北見), and collapsing those
+    # loses real information. Consumers should treat (chimei, office) as the
+    # compound key.
 
     # Normalise gotochi flag
     if "is_gotochi" not in df.columns:
