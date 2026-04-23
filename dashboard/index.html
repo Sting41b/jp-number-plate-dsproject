@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>日本のナンバープレート Explorer</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>日本のナンバープレート</h1>
+    <p class="subtitle">Japanese vehicle number-plate data explorer</p>
+    <div class="stats" id="stats"></div>
+  </header>
+
+  <nav class="tabs" id="tabs">
+    <button class="tab-btn active" data-tab="chimei">地名 Places</button>
+    <button class="tab-btn" data-tab="bunrui">分類番号 Classification</button>
+    <button class="tab-btn" data-tab="hiragana">ひらがな Hiragana</button>
+    <button class="tab-btn" data-tab="gotochi">ご当地 Regional</button>
+  </nav>
+
+  <main>
+    <section id="chimei" class="tab-panel active">
+      <h2>地名 — Regional office names</h2>
+      <p class="desc">The place name printed at the top of a Japanese license plate, mapped to the 運輸支局 / 自動車検査登録事務所 that issues it. Some chimei (e.g. 知床, 富士山) are assigned to more than one office.</p>
+      <input type="search" id="chimei-search" placeholder="Search chimei, office, or prefecture…">
+      <div class="table-wrap">
+        <table id="chimei-table">
+          <thead><tr><th>地名 Chimei</th><th>運輸支局 Office</th><th>都道府県 Prefecture</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <p class="meta" id="chimei-meta"></p>
+    </section>
+
+    <section id="bunrui" class="tab-panel">
+      <h2>分類番号 — Classification numbers</h2>
+      <p class="desc">The 3-digit (or 2-digit legacy) number above the hiragana, identifying the vehicle class.</p>
+      <div class="table-wrap">
+        <table id="bunrui-table">
+          <thead><tr><th>Range</th><th>Vehicle type</th><th>Plate color</th><th>Notes</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="hiragana" class="tab-panel">
+      <h2>ひらがな — Hiragana usage</h2>
+      <p class="desc">Of the 46 hiragana in the gojūon, only 40 appear on plates. Six are excluded for visual, phonetic, or semantic reasons — hover an excluded character to see why.</p>
+      <p class="meta" id="hiragana-meta"></p>
+      <div class="hiragana-grid" id="hiragana-grid"></div>
+      <div class="legend">
+        <span class="legend-item"><span class="kana-cell used legend-swatch">あ</span> Used</span>
+        <span class="legend-item"><span class="kana-cell excluded legend-swatch">を</span> Excluded</span>
+      </div>
+    </section>
+
+    <section id="gotochi" class="tab-panel">
+      <h2>ご当地ナンバー — Regional "local" plates</h2>
+      <p class="desc">Optional plate names introduced in waves since 2006, letting cities and regions override the parent 運輸支局 name.</p>
+      <div class="chart-wrap"><canvas id="gotochi-chart"></canvas></div>
+      <h3>Waves</h3>
+      <div class="table-wrap">
+        <table id="gotochi-waves">
+          <thead><tr><th>Wave</th><th>Issue date</th><th>Count</th><th>Regions</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p id="sources">Data sources:</p>
+    <p class="small">Built with vanilla HTML/CSS/JS. Data pipeline: Python + pandas. Source: <a href="https://github.com/Sting41b/jp-number-plate-dsproject" target="_blank">GitHub</a>.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -79,3 +79,46 @@ re-verified every clean JSON.
 | Multi-office chimei entries preserved | PASS — 知床×2 (釧路, 北見), 富士山×2 (山梨, 静岡), 長崎×2, 沖縄×3 |
 | All other `data/clean/*.json` still strict-parse | PASS |
 | `summary.total_chimei` reflects new count | PASS — 138 |
+
+---
+
+## 2026-04-23 — Dashboard MVP
+
+### What was built
+A static vanilla HTML/CSS/JS dashboard that reads the five `data/clean/*.json`
+files and renders four tabs: 地名 (searchable table), 分類番号 (reference
+table with plate-color swatches), ひらがな (grid of 46 cells with hover
+tooltips explaining each exclusion), ご当地 (Chart.js cumulative line chart
++ wave summary). Uses Chart.js v4.4.1 from jsDelivr; no other dependencies.
+
+### Files
+
+- `dashboard/index.html`
+- `dashboard/css/style.css`
+- `dashboard/js/main.js`
+
+Data is fetched from `../data/clean/` — the dashboard **must be served over
+HTTP** from the project root (e.g. `python -m http.server 8765`), not opened
+via `file://`.
+
+### HTTP accessibility check
+
+Run from repo root: `python -m http.server 8765`, then:
+
+| URL | Status |
+|---|---|
+| `/dashboard/index.html` | 200, 3.6 KB |
+| `/dashboard/css/style.css` | 200, 5.5 KB |
+| `/dashboard/js/main.js` | 200, 6.9 KB |
+| `/data/clean/chimei.json` | 200, 20.9 KB |
+| `/data/clean/bunrui_bangou.json` | 200, 6.1 KB |
+| `/data/clean/hiragana.json` | 200, 7.8 KB |
+| `/data/clean/gotochi.json` | 200, 32.4 KB |
+| `/data/clean/summary.json` | 200, 0.7 KB |
+
+### Not verified
+
+Visual correctness of rendering (layout, chart, Japanese glyph rendering,
+tooltip positioning) was **not** verified — no browser was opened during
+this session. The user should eyeball the page and report back if anything
+looks off.
