@@ -122,3 +122,59 @@ Visual correctness of rendering (layout, chart, Japanese glyph rendering,
 tooltip positioning) was **not** verified — no browser was opened during
 this session. The user should eyeball the page and report back if anything
 looks off.
+
+---
+
+## 2026-04-30 — Tier-A portfolio polish
+
+### What was built
+
+Three portfolio-readiness deliverables landed on a feature branch
+(`portfolio-polish-tier-a`):
+
+1. **A1 — EDA notebook** (`notebooks/01_explore.ipynb`). Re-derives all three
+   README findings in pandas with markdown narration and two matplotlib
+   charts (hiragana exclusion bar chart, cumulative ご当地 staircase). Adds
+   an explicit honesty footnote about the `沖縄`/`長崎` within-office dupes
+   and the absent `地名表示の番号` disambiguator. Executed end-to-end and
+   committed with outputs.
+2. **A2 — Dashboard findings section.** New `<section id="findings">` between
+   the header and the tabs nav, with three keyboard-accessible cards. Each
+   card states one finding, shows a small inline visual (horizontal-bar SVG
+   for hiragana categories, stepped mini-histogram for ご当地 waves, list
+   for cross-office chimei), and clicks into the relevant tab via a new
+   `activateTab()` helper. Stack vertically below 960px.
+3. **A3 — pytest suite** (`tests/`). 19 assertions across schema, shape,
+   invariants, and cleanliness. Crucially, no `(chimei, office)` uniqueness
+   assertion — the plan flagged this as false on current data, so the
+   replacement assertions pin the known dupes (`沖縄 @ 沖縄総合事務局運輸部
+   = 3`, `長崎 @ 長崎運輸支局 = 2`) so a silent dedup change fails loudly.
+
+### Results
+
+| Check | Result |
+|---|---|
+| `pip install -r requirements-dev.txt` succeeds | PASS |
+| `pytest tests/ -v` | PASS — 19/19 in 0.10s |
+| `jupyter nbconvert --execute --inplace notebooks/01_explore.ipynb` | PASS — 9/9 code cells, 2 PNGs embedded, 75 KB output |
+| `node --check dashboard/js/main.js` | PASS — no syntax errors |
+| Re-run `scripts/02_clean_and_merge.py` then re-run pytest | PASS — pipeline output stable, 19/19 still pass |
+| `python -m http.server 8765`, then HEAD requests on dashboard assets | 200 across `index.html`, `js/main.js`, `css/style.css`, `data/clean/summary.json` |
+| Card data simulation against `data/clean/*.json` | PASS — Card 1: visual=3 / semantic=2 / phonetic=1; Card 2: 8.1y + 4.5y wave gaps; Card 3: 知床, 富士山 |
+
+### Not verified
+
+Visual correctness of the new findings section (layout shift between
+desktop/mobile breakpoints, hover/focus states on cards, tap targets on
+real mobile) was **not** verified in a browser. User should spot-check.
+
+### Out of scope (deferred follow-ups)
+
+- Choropleth of chimei-per-prefecture (Tier B).
+- Analytical chapter (stats test on wave inter-arrivals, or clustering — Tier B).
+- `地名表示の番号` disambiguation in the pipeline (Tier C; would update
+  `test_chimei_within_office_known_dupes` in the same PR).
+- GitHub Actions CI for pytest (deferred — judged as not worth the 15
+  minutes vs. other portfolio work).
+- A second portfolio project covering ML / inference content (the bigger
+  strategic gap — see plan).

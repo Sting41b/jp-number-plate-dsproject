@@ -3,3 +3,5 @@ beautifulsoup4>=4.12.0
 pandas>=2.0.0
 lxml>=4.9.0        # pd.read_html backend
 html5lib>=1.1      # fallback parser
+jupyter>=1.0.0     # for notebooks/01_explore.ipynb
+matplotlib>=3.7.0  # notebook charts

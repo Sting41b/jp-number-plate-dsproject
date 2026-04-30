@@ -23,12 +23,22 @@ async function loadAll() {
   ]);
 
   renderStats(summary);
+  renderFindings({ chimei, hiragana, gotochi });
   renderChimei(chimei);
   renderBunrui(bunrui);
   renderHiragana(hiragana);
   renderGotochi(gotochi);
   renderSources(summary);
   initTabs();
+}
+
+function activateTab(tabId) {
+  const buttons = document.querySelectorAll('.tab-btn');
+  const panels  = document.querySelectorAll('.tab-panel');
+  buttons.forEach(b => b.classList.toggle('active', b.dataset.tab === tabId));
+  panels.forEach(p => p.classList.toggle('active', p.id === tabId));
+  const target = document.getElementById(tabId);
+  if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 function escapeHtml(s) {
@@ -178,6 +188,87 @@ function renderGotochi(data) {
   ).join('');
 }
 
+function renderFindings({ chimei, hiragana, gotochi }) {
+  // Card 1: hiragana exclusion taxonomy. Pull the categorised counts straight
+  // from the cleaned hiragana stats — no recomputation in the browser.
+  const cats = hiragana.stats.exclusion_categories || {};
+  // Display order: visual (3), semantic (2), phonetic (1) — descending count.
+  const catOrder = ['visual', 'semantic', 'phonetic'];
+  const maxCount = Math.max(1, ...catOrder.map(c => (cats[c] || {}).count || 0));
+  const barRows = catOrder.map(c => {
+    const entry = cats[c] || { count: 0, examples: [] };
+    const widthPct = (entry.count / maxCount) * 100;
+    return `<div class="bar-row">
+      <span class="bar-label">${escapeHtml(c)}</span>
+      <span class="bar-track"><span class="bar-fill" style="width:${widthPct}%"></span></span>
+      <span class="bar-examples">${entry.examples.map(escapeHtml).join(' ')}</span>
+    </div>`;
+  }).join('');
+
+  // Card 2: gotochi wave gaps. Compute year-gaps between consecutive wave
+  // start dates so the card states the staircase pattern in plain numbers.
+  const waves = (gotochi.wave_summary || []).slice().sort((a, b) =>
+    a.issue_date.localeCompare(b.issue_date)
+  );
+  const gaps = [];
+  for (let i = 1; i < waves.length; i++) {
+    const prev = new Date(waves[i - 1].issue_date);
+    const curr = new Date(waves[i].issue_date);
+    gaps.push(((curr - prev) / (365.25 * 24 * 3600 * 1000)).toFixed(1));
+  }
+  const waveYears = waves.map(w => w.issue_date.slice(0, 4)).join(' → ');
+  const gapText = gaps.length
+    ? gaps.map((g, i) => `${g}y between Wave ${i + 1} and Wave ${i + 2}`).join('; ')
+    : 'no gap data';
+
+  // Card 3: cross-office chimei. Group by chimei in the browser — small data,
+  // not worth pre-computing in the pipeline.
+  const officesByChimei = {};
+  for (const r of chimei) {
+    if (!officesByChimei[r.chimei]) officesByChimei[r.chimei] = new Set();
+    officesByChimei[r.chimei].add(r.office);
+  }
+  const crossOffice = Object.entries(officesByChimei)
+    .filter(([, offices]) => offices.size > 1)
+    .map(([name, offices]) => ({ name, offices: [...offices] }));
+
+  const cards = [
+    {
+      tab: 'hiragana',
+      title: '6 hiragana, 3 kinds of failure',
+      body: 'Of 46 gojūon, 6 are excluded — and the exclusions group cleanly into three different design problems: visual confusables, grammatical particles, and a moraic nasal with no standalone sound.',
+      visual: `<div class="bar-chart">${barRows}</div>`,
+    },
+    {
+      tab: 'gotochi',
+      title: 'Rollouts come in policy bursts',
+      body: `The ご当地 scheme has issued 119 plates across ${waves.length} waves (${escapeHtml(waveYears)}) — ${escapeHtml(gapText)}. The cumulative curve is a staircase, not a slope.`,
+      visual: `<div class="step-mini" aria-hidden="true">
+        <span class="step-bar" style="height:30%"></span>
+        <span class="step-bar" style="height:65%"></span>
+        <span class="step-bar" style="height:100%"></span>
+      </div>`,
+    },
+    {
+      tab: 'chimei',
+      title: 'A few names cross prefecture lines',
+      body: `Most chimei map 1-to-1 to a single 運輸支局, but ${crossOffice.length} (${crossOffice.map(c => c.name).join(', ')}) are deliberately shared by two — the plate name follows geography, not the administrative line.`,
+      visual: `<ul class="cross-list">${crossOffice.map(c =>
+        `<li><strong>${escapeHtml(c.name)}</strong><br><small>${c.offices.map(escapeHtml).join(' + ')}</small></li>`
+      ).join('')}</ul>`,
+    },
+  ];
+
+  document.getElementById('findings-grid').innerHTML = cards.map(c =>
+    `<article class="finding-card" data-tab="${escapeHtml(c.tab)}" tabindex="0" role="button" aria-label="View ${escapeHtml(c.title)} tab">
+       <h3 class="finding-title">${escapeHtml(c.title)}</h3>
+       <p class="finding-body">${c.body}</p>
+       <div class="finding-visual">${c.visual}</div>
+       <span class="finding-cta">Explore →</span>
+     </article>`
+  ).join('');
+}
+
 function renderSources(s) {
   const el = document.getElementById('sources');
   const links = s.data_sources.map(src =>
@@ -188,13 +279,16 @@ function renderSources(s) {
 
 function initTabs() {
   const buttons = document.querySelectorAll('.tab-btn');
-  const panels  = document.querySelectorAll('.tab-panel');
   buttons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      buttons.forEach(b => b.classList.remove('active'));
-      panels.forEach(p => p.classList.remove('active'));
-      btn.classList.add('active');
-      document.getElementById(btn.dataset.tab).classList.add('active');
+    btn.addEventListener('click', () => activateTab(btn.dataset.tab));
+  });
+  document.querySelectorAll('.finding-card[data-tab]').forEach(card => {
+    card.addEventListener('click', () => activateTab(card.dataset.tab));
+    card.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        activateTab(card.dataset.tab);
+      }
     });
   });
 }

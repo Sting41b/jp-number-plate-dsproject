@@ -64,6 +64,148 @@ header h1 {
   margin-top: 0.15rem;
 }
 
+.findings {
+  background: white;
+  border-bottom: 1px solid var(--border);
+  padding: 2rem;
+}
+
+.findings-title {
+  margin: 0 0 1.25rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--fg);
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.findings-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.finding-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.25rem;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s, transform 0.15s;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.finding-card:hover,
+.finding-card:focus {
+  border-color: var(--accent);
+  box-shadow: 0 4px 14px rgba(199, 53, 47, 0.12);
+  transform: translateY(-2px);
+  outline: none;
+}
+
+.finding-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.finding-body {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--fg);
+  line-height: 1.5;
+}
+
+.finding-visual {
+  margin-top: 0.25rem;
+}
+
+.finding-cta {
+  margin-top: auto;
+  font-size: 0.85rem;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* Card 1: horizontal bar chart of hiragana exclusion categories. */
+.bar-chart {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.bar-row {
+  display: grid;
+  grid-template-columns: 4.5rem 1fr auto;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.bar-label {
+  color: var(--muted);
+  text-transform: capitalize;
+}
+
+.bar-track {
+  background: var(--excluded-bg);
+  border-radius: 3px;
+  height: 0.7rem;
+  overflow: hidden;
+}
+
+.bar-fill {
+  display: block;
+  height: 100%;
+  background: var(--accent);
+  border-radius: 3px;
+}
+
+.bar-examples {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--fg);
+  letter-spacing: 0.1em;
+}
+
+/* Card 2: tiny stepped histogram echoing the gotochi cumulative chart. */
+.step-mini {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5rem;
+  height: 60px;
+  padding-top: 0.25rem;
+}
+
+.step-mini .step-bar {
+  flex: 1;
+  background: var(--accent);
+  border-radius: 3px 3px 0 0;
+  opacity: 0.85;
+}
+
+/* Card 3: cross-office chimei list. */
+.cross-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+}
+
+.cross-list li {
+  background: var(--accent-light);
+  border-left: 3px solid var(--accent);
+  padding: 0.4rem 0.6rem;
+  border-radius: 3px;
+}
+
 .tabs {
   display: flex;
   background: white;
@@ -307,4 +449,10 @@ footer a { color: var(--accent); }
   main { padding: 1rem; }
   .stats { grid-template-columns: repeat(2, 1fr); }
   .tab-btn { padding: 0.75rem 0.75rem; font-size: 0.9rem; }
+  .findings { padding: 1.25rem 1rem; }
+  .findings-grid { grid-template-columns: 1fr; }
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+  .findings-grid { grid-template-columns: 1fr; }
 }

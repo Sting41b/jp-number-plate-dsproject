@@ -6,6 +6,8 @@ optional "regional" plate scheme has rolled out since 2006.
 
 **Live demo:** https://sting41b.github.io/jp-number-plate-dsproject/dashboard/
 
+**EDA notebook:** [`notebooks/01_explore.ipynb`](notebooks/01_explore.ipynb) — derives the three findings below directly from the cleaned data, with charts and an honest dupe-handling footnote. GitHub renders it inline.
+
 The dashboard is static HTML/CSS/JS reading JSON produced by a small Python
 pipeline. No build step, no server-side anything.
 
@@ -76,12 +78,18 @@ alone isn't unique.
 ├── scripts/
 │   ├── 01_scrape_chimei.py      fetch & parse the 一覧 Wikipedia table
 │   └── 02_clean_and_merge.py    normalise all sources → data/clean/
+├── notebooks/
+│   └── 01_explore.ipynb         EDA: derives the three findings
 ├── dashboard/
 │   ├── index.html
 │   ├── css/style.css
 │   └── js/main.js
-├── requirements.txt
-└── TEST_RESULTS.md       session-by-session verification log
+├── tests/
+│   ├── conftest.py              fixtures loading data/clean/*.json
+│   └── test_clean_data.py       schema + invariant pytest suite
+├── requirements.txt             runtime deps
+├── requirements-dev.txt         + pytest
+└── TEST_RESULTS.md              session-by-session verification log
 ```
 
 ---
